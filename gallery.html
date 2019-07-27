@@ -1,0 +1,188 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mosaico de fotos</title>
+    <style>
+        .mosaico {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            /* height: 65vh */
+            grid-auto-rows: 100px;
+        }
+
+        .mosaico .foto {
+            object-fit: cover;
+        }
+
+        .mosaico .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .foto:nth-child(19) {
+            /* grid-column: 5 / span 4;
+            grid-row: 2 / span 3; */
+            /*grid-area:grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+            grid-area: 2 / 5 / span 3 / span 4;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mosaico">
+        <div class="foto">
+            <img src="https://live.staticflickr.com/711/21355541418_c0ae96b707_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/3851/14639811877_67da831024_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2896/14066335439_f1cda56a70_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2911/14211943025_d42cb25f67_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/7310/14147373814_d809dc06c1_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/711/21355541418_c0ae96b707_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/3851/14639811877_67da831024_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2896/14066335439_f1cda56a70_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2911/14211943025_d42cb25f67_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/7310/14147373814_d809dc06c1_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/711/21355541418_c0ae96b707_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/3851/14639811877_67da831024_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2896/14066335439_f1cda56a70_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2896/14066335439_f1cda56a70_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2911/14211943025_d42cb25f67_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/7310/14147373814_d809dc06c1_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/711/21355541418_c0ae96b707_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/3851/14639811877_67da831024_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2896/14066335439_f1cda56a70_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2911/14211943025_d42cb25f67_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/7310/14147373814_d809dc06c1_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2911/14211943025_d42cb25f67_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/7310/14147373814_d809dc06c1_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/711/21355541418_c0ae96b707_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/3851/14639811877_67da831024_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2896/14066335439_f1cda56a70_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2911/14211943025_d42cb25f67_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/7310/14147373814_d809dc06c1_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2896/14066335439_f1cda56a70_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2911/14211943025_d42cb25f67_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/7310/14147373814_d809dc06c1_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/711/21355541418_c0ae96b707_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/3851/14639811877_67da831024_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2896/14066335439_f1cda56a70_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2911/14211943025_d42cb25f67_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/7310/14147373814_d809dc06c1_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2911/14211943025_d42cb25f67_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/7310/14147373814_d809dc06c1_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/711/21355541418_c0ae96b707_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/3851/14639811877_67da831024_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2896/14066335439_f1cda56a70_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2911/14211943025_d42cb25f67_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/7310/14147373814_d809dc06c1_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2896/14066335439_f1cda56a70_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/2911/14211943025_d42cb25f67_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/7310/14147373814_d809dc06c1_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/711/21355541418_c0ae96b707_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/3851/14639811877_67da831024_q_d.jpg" alt="">
+        </div>
+        <div class="foto">
+            <img src="https://live.staticflickr.com/711/21355541418_c0ae96b707_q_d.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

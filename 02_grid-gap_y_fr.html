@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>02 grid-gap y unidades fr</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0
+        }
+
+        code {
+            color: darkgray
+        }
+
+        .papar {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .container {
+            display: grid;
+            height: 200px;
+            background-color: paleturquoise;
+            font-size: 2em;
+            grid-template-columns: 200px 300px 100px;
+            grid-template-rows: 100px 50px 25px;
+            /* grid-column-gap: 1em;
+            grid-row-gap: 1em */
+            grid-gap: 1em;
+        }
+
+        .container .item,
+        .container2 .item {
+            outline: 1px solid red;
+            font-size: 1rem;
+        }
+
+        .container2 {
+            display: grid;
+            height: 200px;
+            background-color: paleturquoise;
+            font-size: 2em;
+            grid-template-columns: 1fr 3fr 2fr;
+            grid-template-rows: 3fr 1fr 2fr;
+            /* grid-column-gap: 1em;
+            grid-row-gap: 1em */
+            grid-gap: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="papar">
+        <h1>grid-gap y unidades fr</h1>
+        <h2>grid-gap</h2>
+        <p>El <strong>grid-gap</strong> es el espacio entre columnas <code>(grid-column-gap)</code> o filas
+            <code>(grid-row-gap)</code>. Hay que
+            tener cuidado ya que si el contenedor tiene una altura fija, en el ejemplo tiene 200px de alto y gap de
+            columna y de row de 1em, el contenido
+            se puede desbordar.
+        </p>
+        <p><code>grid-column-gap</code> y <code>grid-row-gap</code> tiene un shothand que es <code>grid-gap</code> el
+            primer valor es para los row y el segundo para los column</p>
+        <div class="container">
+            <div class="item">200px x 100px</div>
+            <div class="item">300px x 100px</div>
+            <div class="item">100px x 100px</div>
+            <div class="item">200px x 50px</div>
+            <div class="item">100px x 50px</div>
+            <div class="item">300px x 50px</div>
+            <div class="item">200px x 25px</div>
+            <div class="item">100px x 25px</div>
+            <div class="item">300px x 25px</div>
+        </div>
+        <br><br><br>
+        <h2>Unidades fr</h2>
+        <p>Las unidades <strong>fr</strong> son medidas fraccionadas, las cuales ellas ponen el tamaño automaticamente
+            dependiendo del tamaño del padre y de cuanta cantidad de fr querramos. Por lo tanto el <strong>fr</strong>
+            es una medida
+            proporcional que se adecua el solo tanto al gap como al tamaño de sus elementos siguientes</p>
+        <div class="container2">
+            <div class="item">3fr x 3fr</div>
+            <div class="item">2fr x 3fr</div>
+            <div class="item">1fr x 1fr</div>
+            <div class="item">3fr x 1fr</div>
+            <div class="item">1fr x 3fr</div>
+            <div class="item">2fr x 1fr</div>
+            <div class="item">1fr x 2fr</div>
+            <div class="item">3fr x 2fr</div>
+            <div class="item">2fr x 2fr</div>
+        </div>
+
+    </div>
+</body>
+
+</html>

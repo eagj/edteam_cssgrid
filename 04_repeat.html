@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>04 repeat638 (holy grial layaout)</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        code {
+            color: darkgray
+        }
+
+        .papar {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .container {
+            display: grid;
+            min-height: 100vh;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 4em 8em 1fr 4em;
+            /* grid-gap: 1em; */
+        }
+
+        .container * {
+            display: grid;
+            justify-content: center;
+            align-items: center
+        }
+
+        header {
+            background-color: lightgreen;
+            grid-column: span 12
+        }
+
+        .featured {
+            background-color: lightslategray;
+            grid-column: span 4
+        }
+
+        main {
+            background-color: lightcyan;
+            grid-column: span 8
+        }
+
+        aside {
+            background-color: lightblue;
+            grid-column: span 4;
+        }
+
+        footer {
+            background-color: lightcoral;
+            grid-column: span 12
+        }
+
+        .explicacion {
+            padding: 20px;
+            position: absolute;
+            background-color: rgba(255, 255, 255, .8);
+            margin-top: 50vh;
+            left: 10%;
+            width: 80%;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="explicacion">
+        <p>Se pueden posicionar los elementos en el orden que se quiera. Para posicionar las columnas se hace con
+            <code>grid-column-start</code> y <code>grid-column-end</code> o el <strong>shorthand</strong>
+            <code>grid-column: start / end</code>
+        </p>
+        <p>Para posicionar las filas se usa <code>grid-row-start</code> y <code>grid-row-end</code> o el
+            <strong>shorthand</strong>
+            <code>grid-row: start / end</code></p>
+    </div>
+    <div class="container">
+        <header>header</header>
+        <div class="featured">1</div>
+        <div class="featured">2</div>
+        <div class="featured">3</div>
+        <main>main</main>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>

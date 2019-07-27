@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>01 definir tracks</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0
+        }
+
+        code {
+            color: darkgray
+        }
+
+        .papar {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .container {
+            display: grid;
+            /* height: 300px; */
+            background-color: paleturquoise;
+            font-size: 2em;
+            grid-template-columns: 200px 300px 100px;
+            grid-template-rows: 100px 50px 25px;
+        }
+
+        .container2 {
+            display: grid;
+            height: 300px;
+            background-color: paleturquoise;
+            font-size: 2em;
+            grid-template-columns: 30% 50% 10%;
+            grid-template-rows: 50% 20% 30%;
+        }
+
+        .container2 .item {
+            outline: 1px solid red;
+            font-size: 1rem;
+        }
+
+
+        .container .item,
+        .container2 .item {
+            outline: 1px solid red;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="papar">
+        <h1>Como definir tracks (filas y columnas)</h1>
+        <div class="container">
+            <div class="item">200px X 100px</div>
+            <div class="item">300px X 100px</div>
+            <div class="item">100px X 100px</div>
+            <div class="item">200px X 50px</div>
+            <div class="item">100px X 50px</div>
+            <div class="item">300px X 50px</div>
+            <div class="item">200px X 25px</div>
+            <div class="item">100px X 25px</div>
+            <div class="item">300px X 25px</div>
+        </div>
+        <p>En este ejemplo las columnas miden 200px 300px y 100px
+            <code>(grid-template-columns: 200px 300px 100px;)</code> y las filas 100px 50px 25px
+            <code>(grid-template-rows: 100px 50px 25px;)</code>.
+        </p>
+        <p>El restante espacio en color turquesa, es el espacio que sobra del 100% del contenedor. Como el contenedor
+            <code>.papar</code> tieen 1200px y la suma de las columnas
+            son 600px <code>(grid-template-columns: 200px 300px 100px;)</code> el restante espacio son 600px.
+        </p>
+        <p>Por tanto el tamaño de las columnas <code>(grid-template-columns)</code> sería:
+            <ul>
+                <li>200px (para la primera columna)</li>
+                <li>300px (para la segunda columna)</li>
+                <li>100px (para la tercera columna)</li>
+            </ul>
+        </p>
+        <p>Mientras que el tamaño de las filas <code>(grid-template-rows)</code> es:
+            <ul>
+                <li>100px (para la primera fila)</li>
+                <li>50px (para la segunda fila)</li>
+                <li>25px (para la tercera fila)</li>
+            </ul>
+        </p>
+        <p><strong>¡En Grid CSS las alturas pueden tener pocentaje!</strong></p>
+        <h2>Ahora el ejemplo anterior en % tanto en columnas como en filas</h2>
+        <p>En este ejemplo las columnas tienen un 30%, un 50% y un 10% <code>(grid-template-columns: 30% 50% 10%)</code>
+            y el espacio turquesa que sobra es un 10%.
+        </p>
+        <p>En el caso de las filas, se le ha dao al contenedor una altura fija, tendrían un 50%, 20% y 30%
+            <code>(grid-template-rows: 50% 20% 30%)</code>. En este caso la suma de los % da 100% y por eso no sobra
+            espacio debajo</p>
+
+
+        <div class="container2">
+            <div class="item">30% X 50%</div>
+            <div class="item">50% x 50%</div>
+            <div class="item">10% X 50%</div>
+            <div class="item">30% X 20%</div>
+            <div class="item">50% X 20%</div>
+            <div class="item">10% X 20%</div>
+            <div class="item">30% X 30%</div>
+            <div class="item">50% X 30%</div>
+            <div class="item">10% X 30%</div>
+        </div>
+
+    </div>
+</body>
+
+</html>
